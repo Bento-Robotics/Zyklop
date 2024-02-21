@@ -18,7 +18,8 @@
       raw_data_mode: false
 
 # Motor Controller
-    motor_d:
+    motor_a:
+      index: 1
       inverted: true
       closed_loop: true
       control_frequency: 16000
@@ -32,7 +33,50 @@
       weight_low_pass_encoder: 0.3
       weight_low_pass_set_point: 0.2
 
+    motor_b:
+      index: 4
+      inverted: true
+      closed_loop: true
+      control_frequency: 16000
+      encoder_inverted: true
+      encoder_ratio: 64.0
+      gear_ratio: 70.0
+      max_rpm: 150.0
+      pid/kd: 0.0
+      pid/ki: 120.0
+      pid/kp: 0.5
+      weight_low_pass_encoder: 0.3
+      weight_low_pass_set_point: 0.2
 
+    motor_d:
+      index: 2
+      inverted: true
+      closed_loop: true
+      control_frequency: 16000
+      encoder_inverted: true
+      encoder_ratio: 64.0
+      gear_ratio: 70.0
+      max_rpm: 150.0
+      pid/kd: 0.0
+      pid/ki: 120.0
+      pid/kp: 0.5
+      weight_low_pass_encoder: 0.3
+      weight_low_pass_set_point: 0.2
+
+    motor_d:
+      index: 3
+      inverted: true
+      closed_loop: true
+      control_frequency: 16000
+      encoder_inverted: true
+      encoder_ratio: 64.0
+      gear_ratio: 70.0
+      max_rpm: 150.0
+      pid/kd: 0.0
+      pid/ki: 120.0
+      pid/kp: 0.5
+      weight_low_pass_encoder: 0.3
+      weight_low_pass_set_point: 0.2
 
 # Range Sensor
     range:
